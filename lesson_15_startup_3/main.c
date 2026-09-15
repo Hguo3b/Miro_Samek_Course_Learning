@@ -88,7 +88,7 @@ int main()
 
 	
 	*((uint32_t *)GPIOF_AHB+(LED_RED | LED_BLUE | LED_GREEN)) = 0;
-	return 0;
+
   *((uint32_t *)GPIOF_AHB+LED_BLUE) = LED_BLUE;
 	while (1)
 	{
