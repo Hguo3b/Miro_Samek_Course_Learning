@@ -13,9 +13,17 @@ int main(void) {
     GPIOF_AHB->DIR |= (LED_RED | LED_BLUE | LED_GREEN);
     GPIOF_AHB->DEN |= (LED_RED | LED_BLUE | LED_GREEN);
 
+    SYSCTL->RCC &= ~(1U << 5 | 1U << 4); /* OSCSRC */
+    SYSCTL->RCC |= (1U << 11); /* BYPASS */
+    SYSCTL->RCC &= ~(1U << 22); /* USESYSDIV */
+
+    SYSCTL->RCC2 &= ~(1U << 31); /* USERCC2 */
+
     SysTick->LOAD = SYS_CLOCK_HZ/2U - 1U;
     SysTick->VAL  = 0U;
     SysTick->CTRL = (1U << 2U) | (1U << 1U) | 1U;
+
+
 
     SysTick_Handler();
 
