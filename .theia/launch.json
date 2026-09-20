@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "lesson_19_gnu_ccs",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "lesson_19_gnu_ccs",
+                "resourceId": "/lesson_19_gnu_ccs/__ccs_2_generatedBinaries"
+            }
+        },
+        {
+            "name": "lesson_19_gnu_ccs (1)",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "lesson_19_gnu_ccs",
+                "resourceId": "/lesson_19_gnu_ccs"
+            },
+            "connections": [
+                {
+                    "name": "Stellaris In-Circuit Debug Interface",
+                    "cores": [
+                        {
+                            "name": "CORTEX_M4_0",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

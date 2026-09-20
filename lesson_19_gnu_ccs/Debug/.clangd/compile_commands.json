@@ -1,0 +1,22 @@
+[
+   {
+      "directory" : "C:/Users/huido/local_development/embedded/Miro_Samek_Course_Learning/lesson_19_gnu_ccs/Debug",
+      "command"   : "clang++ -DPART_TM4C123GH6PM -DTM4C123GH6PM -I\"C:/Users/huido/local_development/embedded/Miro_Samek_Course_Learning/lesson_19_gnu_ccs\" -I\"C:/Users/huido/local_development/embedded/Miro_Samek_Course_Learning/lesson_19_gnu_ccs/CMSIS/Include\" -isystem\"C:/Users/huido/local_development/tmp/0918/arm-none-eabi/include/c++/15.3.1\" -isystem\"C:/Users/huido/local_development/tmp/0918/arm-none-eabi/include/c++/15.3.1/arm-none-eabi\" -isystem\"C:/Users/huido/local_development/tmp/0918/arm-none-eabi/include/c++/15.3.1/backward\" -isystem\"C:/Users/huido/local_development/tmp/0918/lib/gcc/arm-none-eabi/15.3.1/include\" -isystem\"C:/Users/huido/local_development/tmp/0918/lib/gcc/arm-none-eabi/15.3.1/include-fixed\" -isystem\"C:/Users/huido/local_development/tmp/0918/arm-none-eabi/include\" -xc",
+      "file"      : "C:/Users/huido/local_development/embedded/Miro_Samek_Course_Learning/lesson_19_gnu_ccs/main.c"
+   },
+   {
+      "directory" : "C:/Users/huido/local_development/embedded/Miro_Samek_Course_Learning/lesson_19_gnu_ccs/Debug",
+      "command"   : "clang++ -DPART_TM4C123GH6PM -DTM4C123GH6PM -I\"C:/Users/huido/local_development/embedded/Miro_Samek_Course_Learning/lesson_19_gnu_ccs\" -I\"C:/Users/huido/local_development/embedded/Miro_Samek_Course_Learning/lesson_19_gnu_ccs/CMSIS/Include\" -isystem\"C:/Users/huido/local_development/tmp/0918/arm-none-eabi/include/c++/15.3.1\" -isystem\"C:/Users/huido/local_development/tmp/0918/arm-none-eabi/include/c++/15.3.1/arm-none-eabi\" -isystem\"C:/Users/huido/local_development/tmp/0918/arm-none-eabi/include/c++/15.3.1/backward\" -isystem\"C:/Users/huido/local_development/tmp/0918/lib/gcc/arm-none-eabi/15.3.1/include\" -isystem\"C:/Users/huido/local_development/tmp/0918/lib/gcc/arm-none-eabi/15.3.1/include-fixed\" -isystem\"C:/Users/huido/local_development/tmp/0918/arm-none-eabi/include\" -xc",
+      "file"      : "C:/Users/huido/local_development/embedded/Miro_Samek_Course_Learning/lesson_19_gnu_ccs/bsp.c"
+   },
+   {
+      "directory" : "C:/Users/huido/local_development/embedded/Miro_Samek_Course_Learning/lesson_19_gnu_ccs/Debug",
+      "command"   : "clang++ -DPART_TM4C123GH6PM -DTM4C123GH6PM -I\"C:/Users/huido/local_development/embedded/Miro_Samek_Course_Learning/lesson_19_gnu_ccs\" -I\"C:/Users/huido/local_development/embedded/Miro_Samek_Course_Learning/lesson_19_gnu_ccs/CMSIS/Include\" -isystem\"C:/Users/huido/local_development/tmp/0918/arm-none-eabi/include/c++/15.3.1\" -isystem\"C:/Users/huido/local_development/tmp/0918/arm-none-eabi/include/c++/15.3.1/arm-none-eabi\" -isystem\"C:/Users/huido/local_development/tmp/0918/arm-none-eabi/include/c++/15.3.1/backward\" -isystem\"C:/Users/huido/local_development/tmp/0918/lib/gcc/arm-none-eabi/15.3.1/include\" -isystem\"C:/Users/huido/local_development/tmp/0918/lib/gcc/arm-none-eabi/15.3.1/include-fixed\" -isystem\"C:/Users/huido/local_development/tmp/0918/arm-none-eabi/include\" -xc",
+      "file"      : "C:/Users/huido/local_development/embedded/Miro_Samek_Course_Learning/lesson_19_gnu_ccs/system_TM4C123.c"
+   },
+   {
+      "directory" : "C:/Users/huido/local_development/embedded/Miro_Samek_Course_Learning/lesson_19_gnu_ccs/Debug",
+      "command"   : "clang++ -DPART_TM4C123GH6PM -DTM4C123GH6PM -I\"C:/Users/huido/local_development/embedded/Miro_Samek_Course_Learning/lesson_19_gnu_ccs\" -I\"C:/Users/huido/local_development/embedded/Miro_Samek_Course_Learning/lesson_19_gnu_ccs/CMSIS/Include\" -isystem\"C:/Users/huido/local_development/tmp/0918/arm-none-eabi/include/c++/15.3.1\" -isystem\"C:/Users/huido/local_development/tmp/0918/arm-none-eabi/include/c++/15.3.1/arm-none-eabi\" -isystem\"C:/Users/huido/local_development/tmp/0918/arm-none-eabi/include/c++/15.3.1/backward\" -isystem\"C:/Users/huido/local_development/tmp/0918/lib/gcc/arm-none-eabi/15.3.1/include\" -isystem\"C:/Users/huido/local_development/tmp/0918/lib/gcc/arm-none-eabi/15.3.1/include-fixed\" -isystem\"C:/Users/huido/local_development/tmp/0918/arm-none-eabi/include\" -xc",
+      "file"      : "C:/Users/huido/local_development/embedded/Miro_Samek_Course_Learning/lesson_19_gnu_ccs/startup_TM4C123GH6PM.c"
+   }
+]

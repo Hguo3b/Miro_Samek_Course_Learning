@@ -1,0 +1,394 @@
+
+There are no discarded input sections
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ROM              0x00000000         0x00040000         xr
+RAM              0x20000000         0x00008000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./bsp.o
+LOAD ./main.o
+LOAD ./startup_TM4C123GH6PM.o
+LOAD ./system_TM4C123.o
+                0x00000800                        STACK_SIZE = 0x800
+                0x00000000                        HEAP_SIZE = 0x0
+
+.isr_vector     0x00000000      0x36c
+ *(.isr_vector)
+ .isr_vector    0x00000000      0x36c ./startup_TM4C123GH6PM.o
+                0x00000000                g_pfnVectors
+                0x0000036c                        . = ALIGN (0x4)
+
+.text           0x0000036c      0x474
+                0x0000036c                        . = ALIGN (0x4)
+ *(.text)
+ .text          0x0000036c        0x0 ./bsp.o
+ .text          0x0000036c        0x0 ./main.o
+ .text          0x0000036c        0x0 ./startup_TM4C123GH6PM.o
+ .text          0x0000036c        0x0 ./system_TM4C123.o
+ *(.text*)
+ .text.__NVIC_SystemReset
+                0x0000036c       0x24 ./bsp.o
+ .text.assert_failed
+                0x00000390        0x4 ./bsp.o
+                0x00000390                assert_failed
+ .text.SysTick_Handler
+                0x00000394       0x20 ./bsp.o
+                0x00000394                SysTick_Handler
+ .text.main     0x000003b4       0x64 ./main.o
+                0x000003b4                main
+ .text.Reset_Handler
+                0x00000418       0x6c ./startup_TM4C123GH6PM.o
+                0x00000418                Reset_Handler
+ .text.NMI_Handler
+                0x00000484       0x18 ./startup_TM4C123GH6PM.o
+                0x00000484                NMI_Handler
+ .text.HardFault_Handler
+                0x0000049c       0x18 ./startup_TM4C123GH6PM.o
+                0x0000049c                HardFault_Handler
+ .text.MemManage_Handler
+                0x000004b4       0x18 ./startup_TM4C123GH6PM.o
+                0x000004b4                MemManage_Handler
+ .text.BusFault_Handler
+                0x000004cc       0x18 ./startup_TM4C123GH6PM.o
+                0x000004cc                BusFault_Handler
+ .text.UsageFault_Handler
+                0x000004e4       0x18 ./startup_TM4C123GH6PM.o
+                0x000004e4                UsageFault_Handler
+ .text.Default_Handler
+                0x000004fc       0x18 ./startup_TM4C123GH6PM.o
+                0x000004fc                uDMAST_IRQHandler
+                0x000004fc                GPIOPortP4_IRQHandler
+                0x000004fc                PWM1Gen3_IRQHandler
+                0x000004fc                WideTimer5B_IRQHandler
+                0x000004fc                DebugMon_Handler
+                0x000004fc                QEI2_IRQHandler
+                0x000004fc                FlashCtrl_IRQHandler
+                0x000004fc                GPIOPortP7_IRQHandler
+                0x000004fc                Timer0B_IRQHandler
+                0x000004fc                I2C0_IRQHandler
+                0x000004fc                WideTimer4B_IRQHandler
+                0x000004fc                PendSV_Handler
+                0x000004fc                I2C1_IRQHandler
+                0x000004fc                GPIOPortP5_IRQHandler
+                0x000004fc                PWMGen0_IRQHandler
+                0x000004fc                UART1_IRQHandler
+                0x000004fc                CAN1_IRQHandler
+                0x000004fc                Timer1B_IRQHandler
+                0x000004fc                Watchdog_IRQHandler
+                0x000004fc                GPIOPortS_IRQHandler
+                0x000004fc                GPIOPortQ7_IRQHandler
+                0x000004fc                PWM1Gen2_IRQHandler
+                0x000004fc                UART0_IRQHandler
+                0x000004fc                GPIOPortL_IRQHandler
+                0x000004fc                SSI0_IRQHandler
+                0x000004fc                GPIOPortM_IRQHandler
+                0x000004fc                FPU_IRQHandler
+                0x000004fc                ADCSeq1_IRQHandler
+                0x000004fc                GPIOPortP0_IRQHandler
+                0x000004fc                WideTimer0B_IRQHandler
+                0x000004fc                PWMFault_IRQHandler
+                0x000004fc                WideTimer1A_IRQHandler
+                0x000004fc                I2C4_IRQHandler
+                0x000004fc                I2C5_IRQHandler
+                0x000004fc                GPIOPortQ5_IRQHandler
+                0x000004fc                PWMGen1_IRQHandler
+                0x000004fc                SSI1_IRQHandler
+                0x000004fc                I2C2_IRQHandler
+                0x000004fc                GPIOPortC_IRQHandler
+                0x000004fc                UART5_IRQHandler
+                0x000004fc                GPIOPortK_IRQHandler
+                0x000004fc                ADCSeq2_IRQHandler
+                0x000004fc                PWMGen2_IRQHandler
+                0x000004fc                UART2_IRQHandler
+                0x000004fc                GPIOPortP3_IRQHandler
+                0x000004fc                ADC1Seq0_IRQHandler
+                0x000004fc                UART4_IRQHandler
+                0x000004fc                GPIOPortJ_IRQHandler
+                0x000004fc                Default_Handler
+                0x000004fc                WideTimer0A_IRQHandler
+                0x000004fc                Timer5A_IRQHandler
+                0x000004fc                WideTimer3B_IRQHandler
+                0x000004fc                WideTimer2B_IRQHandler
+                0x000004fc                WideTimer5A_IRQHandler
+                0x000004fc                Timer4A_IRQHandler
+                0x000004fc                QEI1_IRQHandler
+                0x000004fc                PWM1Fault_IRQHandler
+                0x000004fc                GPIOPortP6_IRQHandler
+                0x000004fc                QEI0_IRQHandler
+                0x000004fc                ADC1Seq2_IRQHandler
+                0x000004fc                ADC1Seq1_IRQHandler
+                0x000004fc                PWMGen3_IRQHandler
+                0x000004fc                GPIOPortD_IRQHandler
+                0x000004fc                USB0_IRQHandler
+                0x000004fc                I2C3_IRQHandler
+                0x000004fc                SVC_Handler
+                0x000004fc                GPIOPortP2_IRQHandler
+                0x000004fc                GPIOPortQ4_IRQHandler
+                0x000004fc                Timer3B_IRQHandler
+                0x000004fc                Timer3A_IRQHandler
+                0x000004fc                GPIOPortA_IRQHandler
+                0x000004fc                ADC1Seq3_IRQHandler
+                0x000004fc                Timer0A_IRQHandler
+                0x000004fc                GPIOPortP1_IRQHandler
+                0x000004fc                ADCSeq0_IRQHandler
+                0x000004fc                Timer1A_IRQHandler
+                0x000004fc                GPIOPortG_IRQHandler
+                0x000004fc                GPIOPortQ1_IRQHandler
+                0x000004fc                GPIOPortQ3_IRQHandler
+                0x000004fc                Timer5B_IRQHandler
+                0x000004fc                ADCSeq3_IRQHandler
+                0x000004fc                WideTimer4A_IRQHandler
+                0x000004fc                GPIOPortE_IRQHandler
+                0x000004fc                CAN0_IRQHandler
+                0x000004fc                GPIOPortQ0_IRQHandler
+                0x000004fc                Comp0_IRQHandler
+                0x000004fc                Comp1_IRQHandler
+                0x000004fc                Comp2_IRQHandler
+                0x000004fc                GPIOPortQ6_IRQHandler
+                0x000004fc                SSI2_IRQHandler
+                0x000004fc                PWM1Gen0_IRQHandler
+                0x000004fc                GPIOPortF_IRQHandler
+                0x000004fc                UART7_IRQHandler
+                0x000004fc                UART6_IRQHandler
+                0x000004fc                WideTimer2A_IRQHandler
+                0x000004fc                GPIOPortB_IRQHandler
+                0x000004fc                WideTimer3A_IRQHandler
+                0x000004fc                CAN2_IRQHandler
+                0x000004fc                WideTimer1B_IRQHandler
+                0x000004fc                GPIOPortH_IRQHandler
+                0x000004fc                GPIOPortQ2_IRQHandler
+                0x000004fc                GPIOPortR_IRQHandler
+                0x000004fc                Timer4B_IRQHandler
+                0x000004fc                Timer2A_IRQHandler
+                0x000004fc                SSI3_IRQHandler
+                0x000004fc                Timer2B_IRQHandler
+                0x000004fc                uDMAError_IRQHandler
+                0x000004fc                GPIOPortN_IRQHandler
+                0x000004fc                UART3_IRQHandler
+                0x000004fc                SysCtrl_IRQHandler
+                0x000004fc                Hibernate_IRQHandler
+                0x000004fc                PWM1Gen1_IRQHandler
+ .text.getOscClk
+                0x00000514      0x144 ./system_TM4C123.o
+ .text.SystemCoreClockUpdate
+                0x00000658       0xb4 ./system_TM4C123.o
+                0x00000658                SystemCoreClockUpdate
+ .text.SystemInit
+                0x0000070c       0x88 ./system_TM4C123.o
+                0x0000070c                SystemInit
+ *(.rodata)
+ *(.rodata*)
+ .rodata.Reset_Handler.str1.4
+                0x00000794       0x4c ./startup_TM4C123GH6PM.o
+                                  0xe (size before relaxing)
+ .rodata.NMI_Handler.str1.4
+                0x000007e0        0x0 ./startup_TM4C123GH6PM.o
+                                  0x4 (size before relaxing)
+ .rodata.HardFault_Handler.str1.4
+                0x000007e0        0x0 ./startup_TM4C123GH6PM.o
+                                  0xa (size before relaxing)
+ .rodata.MemManage_Handler.str1.4
+                0x000007e0        0x0 ./startup_TM4C123GH6PM.o
+                                  0xa (size before relaxing)
+ .rodata.BusFault_Handler.str1.4
+                0x000007e0        0x0 ./startup_TM4C123GH6PM.o
+                                  0x9 (size before relaxing)
+ .rodata.UsageFault_Handler.str1.4
+                0x000007e0        0x0 ./startup_TM4C123GH6PM.o
+                                  0xb (size before relaxing)
+ .rodata.Default_Handler.str1.4
+                0x000007e0        0x0 ./startup_TM4C123GH6PM.o
+                                  0x8 (size before relaxing)
+ *(.init)
+ *(.fini)
+                0x000007e0                        . = ALIGN (0x4)
+
+.glue_7         0x000007e0        0x0
+ .glue_7        0x000007e0        0x0 linker stubs
+
+.glue_7t        0x000007e0        0x0
+ .glue_7t       0x000007e0        0x0 linker stubs
+
+.vfp11_veneer   0x000007e0        0x0
+ .vfp11_veneer  0x000007e0        0x0 linker stubs
+
+.v4_bx          0x000007e0        0x0
+ .v4_bx         0x000007e0        0x0 linker stubs
+
+.iplt           0x000007e0        0x0
+ .iplt          0x000007e0        0x0 ./bsp.o
+
+.rel.dyn        0x000007e0        0x0
+ .rel.iplt      0x000007e0        0x0 ./bsp.o
+
+.preinit_array  0x000007e0        0x0
+                [!provide]                        PROVIDE (__preinit_array_start = .)
+ *(.preinit_array*)
+                [!provide]                        PROVIDE (__preinit_array_end = .)
+
+.init_array     0x000007e0        0x0
+                [!provide]                        PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array*)
+                [!provide]                        PROVIDE (__init_array_end = .)
+
+.fini_array     0x000007e0        0x0
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(.fini_array*)
+ *(SORT_BY_NAME(.fini_array.*))
+                [!provide]                        PROVIDE (__fini_array_end = .)
+                0x000007e0                        _etext = .
+
+.stack          0x20000000      0x800
+                0x20000000                        __stack_start__ = .
+                0x20000800                        . = (. + STACK_SIZE)
+ *fill*         0x20000000      0x800 
+                0x20000800                        . = ALIGN (0x4)
+                0x20000800                        __stack_end__ = .
+
+.data           0x20000800        0x4 load address 0x000007e0
+                0x000007e0                        __data_load = LOADADDR (.data)
+                0x20000800                        __data_start = .
+ *(.data)
+ .data          0x20000800        0x0 ./bsp.o
+ .data          0x20000800        0x0 ./main.o
+ .data          0x20000800        0x0 ./startup_TM4C123GH6PM.o
+ .data          0x20000800        0x0 ./system_TM4C123.o
+ *(.data*)
+ .data.SystemCoreClock
+                0x20000800        0x4 ./system_TM4C123.o
+                0x20000800                SystemCoreClock
+                0x20000804                        . = ALIGN (0x4)
+                0x20000804                        __data_end__ = .
+                0x20000804                        _edata = __data_end__
+
+.igot.plt       0x20000804        0x0 load address 0x000007e4
+ .igot.plt      0x20000804        0x0 ./bsp.o
+
+.bss            0x20000804        0x0 load address 0x000007e4
+                0x20000804                        __bss_start__ = .
+ *(.bss)
+ .bss           0x20000804        0x0 ./bsp.o
+ .bss           0x20000804        0x0 ./main.o
+ .bss           0x20000804        0x0 ./startup_TM4C123GH6PM.o
+ .bss           0x20000804        0x0 ./system_TM4C123.o
+ *(.bss*)
+ *(COMMON)
+                0x20000804                        . = ALIGN (0x4)
+                0x20000804                        _ebss = .
+                0x20000804                        __bss_end__ = .
+                0x20000804                        __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x20000804                        __exidx_end = .
+                [!provide]                        PROVIDE (end = _ebss)
+                [!provide]                        PROVIDE (_end = _ebss)
+                [!provide]                        PROVIDE (__end__ = _ebss)
+
+.heap           0x20000804        0x0
+                0x20000804                        __heap_start__ = .
+                0x20000804                        . = (. + HEAP_SIZE)
+                0x20000804                        . = ALIGN (0x4)
+                0x20000804                        __heap_end__ = .
+
+/DISCARD/
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+START GROUP
+LOAD C:/Users/huido/local_development/tmp/0918/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m/nofp\libgcc.a
+LOAD C:/Users/huido/local_development/tmp/0918/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a
+LOAD C:/Users/huido/local_development/tmp/0918/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc.a
+END GROUP
+START GROUP
+LOAD C:/Users/huido/local_development/tmp/0918/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m/nofp\libgcc.a
+LOAD C:/Users/huido/local_development/tmp/0918/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc.a
+LOAD C:/Users/huido/local_development/tmp/0918/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a
+END GROUP
+OUTPUT(lesson_19_gnu_ccs.out elf32-littlearm)
+LOAD linker stubs
+LOAD C:/Users/huido/local_development/tmp/0918/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc.a
+LOAD C:/Users/huido/local_development/tmp/0918/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libm.a
+LOAD C:/Users/huido/local_development/tmp/0918/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m/nofp\libgcc.a
+
+.debug_info     0x00000000     0x236f
+ .debug_info    0x00000000      0x4e3 ./bsp.o
+ .debug_info    0x000004e3      0xf11 ./main.o
+ .debug_info    0x000013f4      0x204 ./startup_TM4C123GH6PM.o
+ .debug_info    0x000015f8      0xd77 ./system_TM4C123.o
+
+.debug_abbrev   0x00000000      0x4d1
+ .debug_abbrev  0x00000000      0x147 ./bsp.o
+ .debug_abbrev  0x00000147      0x11a ./main.o
+ .debug_abbrev  0x00000261      0x11d ./startup_TM4C123GH6PM.o
+ .debug_abbrev  0x0000037e      0x153 ./system_TM4C123.o
+
+.debug_loc      0x00000000      0x250
+ .debug_loc     0x00000000       0x26 ./bsp.o
+ .debug_loc     0x00000026       0x47 ./startup_TM4C123GH6PM.o
+ .debug_loc     0x0000006d      0x1e3 ./system_TM4C123.o
+
+.debug_aranges  0x00000000       0xd0
+ .debug_aranges
+                0x00000000       0x30 ./bsp.o
+ .debug_aranges
+                0x00000030       0x20 ./main.o
+ .debug_aranges
+                0x00000050       0x50 ./startup_TM4C123GH6PM.o
+ .debug_aranges
+                0x000000a0       0x30 ./system_TM4C123.o
+
+.debug_ranges   0x00000000       0x90
+ .debug_ranges  0x00000000       0x20 ./bsp.o
+ .debug_ranges  0x00000020       0x10 ./main.o
+ .debug_ranges  0x00000030       0x40 ./startup_TM4C123GH6PM.o
+ .debug_ranges  0x00000070       0x20 ./system_TM4C123.o
+
+.debug_line     0x00000000      0x84c
+ .debug_line    0x00000000      0x1f6 ./bsp.o
+ .debug_line    0x000001f6      0x1e8 ./main.o
+ .debug_line    0x000003de      0x12d ./startup_TM4C123GH6PM.o
+ .debug_line    0x0000050b      0x341 ./system_TM4C123.o
+
+.debug_str      0x00000000      0x996
+ .debug_str     0x00000000      0x996 ./bsp.o
+                                0x2a0 (size before relaxing)
+ .debug_str     0x00000996        0x0 ./main.o
+                                0x7d7 (size before relaxing)
+ .debug_str     0x00000996        0x0 ./startup_TM4C123GH6PM.o
+                                0x22e (size before relaxing)
+ .debug_str     0x00000996        0x0 ./system_TM4C123.o
+                                0x7a8 (size before relaxing)
+
+.comment        0x00000000       0x46
+ .comment       0x00000000       0x46 ./bsp.o
+                                 0x47 (size before relaxing)
+ .comment       0x00000046        0x0 ./main.o
+                                 0x47 (size before relaxing)
+ .comment       0x00000046        0x0 ./startup_TM4C123GH6PM.o
+                                 0x47 (size before relaxing)
+ .comment       0x00000046        0x0 ./system_TM4C123.o
+                                 0x47 (size before relaxing)
+
+.ARM.attributes
+                0x00000000       0x2e
+ .ARM.attributes
+                0x00000000       0x2e ./bsp.o
+ .ARM.attributes
+                0x0000002e       0x2e ./main.o
+ .ARM.attributes
+                0x0000005c       0x2e ./startup_TM4C123GH6PM.o
+ .ARM.attributes
+                0x0000008a       0x2e ./system_TM4C123.o
+
+.debug_frame    0x00000000      0x13c
+ .debug_frame   0x00000000       0x48 ./bsp.o
+ .debug_frame   0x00000048       0x28 ./main.o
+ .debug_frame   0x00000070       0x80 ./startup_TM4C123GH6PM.o
+ .debug_frame   0x000000f0       0x4c ./system_TM4C123.o

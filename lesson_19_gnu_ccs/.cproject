@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+    <storageModule moduleId="org.eclipse.cdt.core.settings">
+        <cconfiguration id="com.ti.ccstudio.buildDefinitions.TMS470.Debug.1783674236">
+            <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.ti.ccstudio.buildDefinitions.TMS470.Debug.1783674236" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+                <externalSettings/>
+                <extensions>
+                    <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="com.ti.ccs.project.ErrorParser"/>
+                    <extension id="org.eclipse.cdt.core.GASErrorParser" point="com.ti.ccs.project.ErrorParser"/>
+                    <extension id="org.eclipse.cdt.core.GLDErrorParser" point="com.ti.ccs.project.ErrorParser"/>
+                    <extension id="org.eclipse.cdt.core.GCCErrorParser" point="com.ti.ccs.project.ErrorParser"/>
+                </extensions>
+            </storageModule>
+            <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+                <configuration artifactExtension="out" artifactName="${ProjName}" buildProperties="" cleanCommand="${CG_CLEAN_CMD}" description="" id="com.ti.ccstudio.buildDefinitions.TMS470.Debug.1783674236" name="Debug" parent="com.ti.ccstudio.buildDefinitions.TMS470.Debug">
+                    <folderInfo id="com.ti.ccstudio.buildDefinitions.TMS470.Debug.1783674236." name="/" resourcePath="">
+                        <toolChain id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.exe.DebugToolchain.898150937" name="TI Build Tools" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.exe.DebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.exe.linkerDebug.1679316290">
+                            <option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1260995972" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+                                <listOptionValue value="DEVICE_CONFIGURATION_ID=Cortex M.TM4C123GH6PM"/>
+                                <listOptionValue value="DEVICE_CORE_ID=CORTEX_M4_0"/>
+                                <listOptionValue value="DEVICE_ENDIANNESS=little"/>
+                                <listOptionValue value="OUTPUT_FORMAT=ELF"/>
+                                <listOptionValue value="CCS_MBS_VERSION=70.0.0"/>
+                                <listOptionValue value="LINKER_COMMAND_FILE=tm4c123gh6pm.lds"/>
+                                <listOptionValue value="RUNTIME_SUPPORT_LIBRARY="/>
+                                <listOptionValue value="OUTPUT_TYPE=executable"/>
+                                <listOptionValue value="PRODUCTS="/>
+                                <listOptionValue value="PRODUCT_MACRO_IMPORTS={}"/>
+                            </option>
+                            <option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.1439512838" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="GNU_15.3.1:Free Software Foundation" valueType="string"/>
+                            <targetPlatform id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.exe.targetPlatformDebug.1755376433" name="Platform" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.exe.targetPlatformDebug"/>
+                            <builder buildPath="${BuildDirectory}" id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.exe.builderDebug.1954121842" keepEnvironmentInBuildfile="false" name="GNU Make" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.exe.builderDebug"/>
+                            <tool id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.exe.compilerDebug.1176296700" name="GNU Compiler" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.exe.compilerDebug">
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.CODE_STATE.2066857438" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.CODE_STATE" value="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.CODE_STATE.THUMB" valueType="enumerated"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.MARCH.900832629" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.MARCH" value="armv7e-m" valueType="string"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.MCPU.1822104590" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.MCPU" value="cortex-m4" valueType="string"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.MFPU.1555525123" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.MFPU" value="" valueType="string"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.MFLOAT_ABI.1314666261" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.MFLOAT_ABI" value="" valueType="string"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.FUNCTION_SECTIONS.1274505417" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.FUNCTION_SECTIONS" value="true" valueType="boolean"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.DATA_SECTIONS.1405987451" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.DATA_SECTIONS" value="true" valueType="boolean"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.DEFINE.1705159663" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.DEFINE" valueType="definedSymbols">
+                                    <listOptionValue value="PART_TM4C123GH6PM"/>
+                                    <listOptionValue value="TM4C123GH6PM"/>
+                                </option>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.DEBUG.1915763994" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.DEBUG" value="true" valueType="boolean"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.STRICT_DWARF.2071270107" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.STRICT_DWARF" value="true" valueType="boolean"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.DWARF_VERSION.2059985747" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.DWARF_VERSION" value="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.DWARF_VERSION.3" valueType="enumerated"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.INCLUDE_PATH.92472515" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.INCLUDE_PATH" valueType="includePath">
+                                    <listOptionValue value="${PROJECT_ROOT}"/>
+                                    <listOptionValue value="C:/Users/huido/local_development/embedded/Miro_Samek_Course_Learning/lesson_19_gnu_ccs/CMSIS/Include"/>
+                                </option>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.ASM_SPECIFIC_FLAGS.1913334832" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.ASM_SPECIFIC_FLAGS" valueType="stringList">
+                                    <listOptionValue value="[asm: -xassembler-with-cpp]"/>
+                                </option>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.OPT_LEVEL.358013800" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.OPT_LEVEL" value="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.OPT_LEVEL.OPT_FOR_DEBUG" valueType="enumerated"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.SPECS.1903880964" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.SPECS" value="nosys.specs" valueType="string"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.OTHER_FLAGS.1082507806" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.OTHER_FLAGS" valueType="stringList"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.MLONG_CALLS.921834031" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.MLONG_CALLS" value="false" valueType="boolean"/>
+                            </tool>
+                            <tool id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.exe.linkerDebug.1679316290" name="GNU Linker" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.exe.linkerDebug">
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.linkerID.OUTPUT_FILE.2121502109" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.linkerID.OUTPUT_FILE" value="${ProjName}.out" valueType="string"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.linkerID.MAP_FILE.2122226263" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.linkerID.MAP_FILE" value="${ProjName}.map" valueType="string"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.linkerID.OTHER_FLAGS.1391583219" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.linkerID.OTHER_FLAGS" valueType="stringList"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.linkerID.SEARCH_PATH.1996043642" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.linkerID.SEARCH_PATH" valueType="libPaths"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.linkerID.NOSTARTFILES.1689448108" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.linkerID.NOSTARTFILES" value="true" valueType="boolean"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.linkerID.NODEFAULTLIBS.288421674" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.linkerID.NODEFAULTLIBS" value="false" valueType="boolean"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.linkerID.NOSTDLIB.434928652" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.linkerID.NOSTDLIB" value="false" valueType="boolean"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.linkerID.STATIC.18841688" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.linkerID.STATIC" value="false" valueType="boolean"/>
+                            </tool>
+                            <tool id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.hex.709424938" name="GNU Objcopy Utility" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.hex"/>
+                        </toolChain>
+                    </folderInfo>
+                </configuration>
+            </storageModule>
+            <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+        </cconfiguration>
+        <cconfiguration id="com.ti.ccstudio.buildDefinitions.TMS470.Release.150379577">
+            <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.ti.ccstudio.buildDefinitions.TMS470.Release.150379577" moduleId="org.eclipse.cdt.core.settings" name="Release">
+                <externalSettings/>
+                <extensions>
+                    <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="com.ti.ccs.project.ErrorParser"/>
+                    <extension id="org.eclipse.cdt.core.GASErrorParser" point="com.ti.ccs.project.ErrorParser"/>
+                    <extension id="org.eclipse.cdt.core.GLDErrorParser" point="com.ti.ccs.project.ErrorParser"/>
+                    <extension id="org.eclipse.cdt.core.GCCErrorParser" point="com.ti.ccs.project.ErrorParser"/>
+                </extensions>
+            </storageModule>
+            <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+                <configuration artifactExtension="out" artifactName="${ProjName}" buildProperties="" cleanCommand="${CG_CLEAN_CMD}" description="" id="com.ti.ccstudio.buildDefinitions.TMS470.Release.150379577" name="Release" parent="com.ti.ccstudio.buildDefinitions.TMS470.Release">
+                    <folderInfo id="com.ti.ccstudio.buildDefinitions.TMS470.Release.150379577." name="/" resourcePath="">
+                        <toolChain id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.exe.ReleaseToolchain.973946478" name="TI Build Tools" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.exe.ReleaseToolchain" targetTool="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.exe.linkerRelease.1260680835">
+                            <option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.559487148" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+                                <listOptionValue value="DEVICE_CONFIGURATION_ID=Cortex M.TM4C123GH6PM"/>
+                                <listOptionValue value="DEVICE_CORE_ID="/>
+                                <listOptionValue value="DEVICE_ENDIANNESS=little"/>
+                                <listOptionValue value="OUTPUT_FORMAT=ELF"/>
+                                <listOptionValue value="CCS_MBS_VERSION=70.0.0"/>
+                                <listOptionValue value="LINKER_COMMAND_FILE=tm4c123gh6pm.lds"/>
+                                <listOptionValue value="RUNTIME_SUPPORT_LIBRARY="/>
+                                <listOptionValue value="OUTPUT_TYPE=executable"/>
+                                <listOptionValue value="PRODUCTS="/>
+                                <listOptionValue value="PRODUCT_MACRO_IMPORTS={}"/>
+                            </option>
+                            <option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.40187316" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="GNU_15.3.1:Free Software Foundation" valueType="string"/>
+                            <targetPlatform id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.exe.targetPlatformRelease.1632132076" name="Platform" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.exe.targetPlatformRelease"/>
+                            <builder buildPath="${BuildDirectory}" id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.exe.builderRelease.1651075298" name="GNU Make.Release" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.exe.builderRelease"/>
+                            <tool id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.exe.compilerRelease.2012026476" name="GNU Compiler" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.exe.compilerRelease">
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.CODE_STATE.1251163351" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.CODE_STATE" value="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.CODE_STATE.THUMB" valueType="enumerated"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.MARCH.29235262" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.MARCH" value="armv7e-m" valueType="string"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.MCPU.1368797276" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.MCPU" value="cortex-m4" valueType="string"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.MFPU.2126691704" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.MFPU" value="fpv4-sp-d16" valueType="string"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.MFLOAT_ABI.1045124413" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.MFLOAT_ABI" value="hard" valueType="string"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.FUNCTION_SECTIONS.1414263208" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.FUNCTION_SECTIONS" value="true" valueType="boolean"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.DATA_SECTIONS.1105734734" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.DATA_SECTIONS" value="true" valueType="boolean"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.DEFINE.1672413446" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.DEFINE" valueType="definedSymbols">
+                                    <listOptionValue value="PART_TM4C123GH6PM"/>
+                                </option>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.INCLUDE_PATH.1175200561" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.INCLUDE_PATH" valueType="includePath">
+                                    <listOptionValue value="${PROJECT_ROOT}"/>
+                                    <listOptionValue value="${CG_TOOL_INCLUDE_PATH}"/>
+                                </option>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.ASM_SPECIFIC_FLAGS.878059841" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.ASM_SPECIFIC_FLAGS" valueType="stringList">
+                                    <listOptionValue value="[asm: -xassembler-with-cpp]"/>
+                                </option>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.OPT_LEVEL.release.571030767" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.OPT_LEVEL.release" value="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.OPT_LEVEL.OPT_FOR_SPACE" valueType="enumerated"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.SPECS.1650642930" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.compilerID.SPECS" value="nosys.specs" valueType="string"/>
+                            </tool>
+                            <tool id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.exe.linkerRelease.1260680835" name="GNU Linker" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.exe.linkerRelease">
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.linkerID.OUTPUT_FILE.724437881" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.linkerID.OUTPUT_FILE" value="${ProjName}.out" valueType="string"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.linkerID.MAP_FILE.615566891" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.linkerID.MAP_FILE" value="${ProjName}.map" valueType="string"/>
+                            </tool>
+                            <tool id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.hex.1650666646" name="GNU Objcopy Utility" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_15.0.hex"/>
+                        </toolChain>
+                    </folderInfo>
+                </configuration>
+            </storageModule>
+            <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+        </cconfiguration>
+    </storageModule>
+    <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+        <project id="lesson_19_gnu_ccs.com.ti.ccstudio.buildDefinitions.TMS470.ProjectType.1794336680" name="TMS470" projectType="com.ti.ccstudio.buildDefinitions.TMS470.ProjectType"/>
+    </storageModule>
+</cproject>

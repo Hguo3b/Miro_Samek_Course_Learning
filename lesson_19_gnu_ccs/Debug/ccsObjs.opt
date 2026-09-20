@@ -1,0 +1,5 @@
+"./bsp.o"
+"./main.o"
+"./startup_TM4C123GH6PM.o"
+"./system_TM4C123.o"
+-Wl,-T"../tm4c123gh6pm.lds"
