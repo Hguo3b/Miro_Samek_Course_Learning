@@ -31,6 +31,50 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "lesson_17_msp430_interrupt",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "lesson_17_msp430_interrupt",
+                "resourceId": "/lesson_17_msp430_interrupt/__ccs_2_generatedBinaries"
+            },
+            "connections": [
+                {
+                    "name": "TI MSP430 USB1",
+                    "cores": [
+                        {
+                            "name": "MSP430",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "lesson_17_msp430_interrupt (1)",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "lesson_17_msp430_interrupt",
+                "resourceId": "/lesson_17_msp430_interrupt"
+            },
+            "connections": [
+                {
+                    "name": "TI MSP430 USB1",
+                    "cores": [
+                        {
+                            "name": "MSP430",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues>\n\n  <property id=\"EnableSoftwareBreakpoints\">\n    <curValue>0</curValue>\n  </property>\n\n  <property id=\"GeneralClockControl1\">\n    <curValue>1</curValue>\n  </property>\n\n  <property id=\"GeneralClockControl2\">\n    <curValue>1</curValue>\n  </property>\n\n  <property id=\"GeneralClockControl5\">\n    <curValue>1</curValue>\n  </property>\n\n  <property id=\"MSP430EraseStartAddress\">\n    <curValue>c000</curValue>\n  </property>\n\n  <property id=\"MSP430EraseEndAddress\">\n    <curValue>ffff</curValue>\n  </property>\n\n  <property id=\"FlashFiles\">\n    <curValue></curValue>\n  </property>\n\n</PropertyValues>\n"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

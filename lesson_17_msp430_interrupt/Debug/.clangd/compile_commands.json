@@ -1,0 +1,12 @@
+[
+   {
+      "directory" : "C:/Users/huido/local_development/embedded/Miro_Samek_Course_Learning/lesson_17_msp430_interrupt/Debug",
+      "command"   : "clang++ -D__MSP430G2553__ -I\"C:/ti/ccs2101/ccs/ccs_base/msp430/include_gcc\" -I\"C:/Users/huido/local_development/embedded/Miro_Samek_Course_Learning/lesson_17_msp430_interrupt\" -I\"C:/ti/msp430-gcc/include\" -isystem\"C:/ti/msp430-gcc/msp430-elf/include/c++/9.3.1\" -isystem\"C:/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/msp430-elf\" -isystem\"C:/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/backward\" -isystem\"C:/ti/msp430-gcc/lib/gcc/msp430-elf/9.3.1/include\" -isystem\"C:/ti/msp430-gcc/lib/gcc/msp430-elf/9.3.1/include-fixed\" -isystem\"C:/ti/msp430-gcc/msp430-elf/include\" -xc",
+      "file"      : "C:/Users/huido/local_development/embedded/Miro_Samek_Course_Learning/lesson_17_msp430_interrupt/main.c"
+   },
+   {
+      "directory" : "C:/Users/huido/local_development/embedded/Miro_Samek_Course_Learning/lesson_17_msp430_interrupt/Debug",
+      "command"   : "clang++ -D__MSP430G2553__ -I\"C:/ti/ccs2101/ccs/ccs_base/msp430/include_gcc\" -I\"C:/Users/huido/local_development/embedded/Miro_Samek_Course_Learning/lesson_17_msp430_interrupt\" -I\"C:/ti/msp430-gcc/include\" -isystem\"C:/ti/msp430-gcc/msp430-elf/include/c++/9.3.1\" -isystem\"C:/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/msp430-elf\" -isystem\"C:/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/backward\" -isystem\"C:/ti/msp430-gcc/lib/gcc/msp430-elf/9.3.1/include\" -isystem\"C:/ti/msp430-gcc/lib/gcc/msp430-elf/9.3.1/include-fixed\" -isystem\"C:/ti/msp430-gcc/msp430-elf/include\" -xc",
+      "file"      : "C:/Users/huido/local_development/embedded/Miro_Samek_Course_Learning/lesson_17_msp430_interrupt/bsp.c"
+   }
+]
