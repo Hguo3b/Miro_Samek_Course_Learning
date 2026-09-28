@@ -4,6 +4,8 @@
 
 
 void LED_toggle(void) {
+    int volatile ii=0;
+    ii = ii + 1;
     P1OUT ^= LED1;  /* toggle LED1 */
 }
 
@@ -13,6 +15,7 @@ Timer0_Handler(void)
     LED_toggle();  /* toggle LED1 */
 }
 
-void Timer0_Function(void) {
+void Timer0_Function(void) 
+{
     LED_toggle();  /* toggle LED1 */
 }

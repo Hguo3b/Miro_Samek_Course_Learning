@@ -16,6 +16,7 @@ int main(void)
     TACCR0 = SMCLK_HZ/8U/2U - 1U;
     TACCTL0 = CCIE;  /* CCR0 interrupt enabled */
 	
+    Timer0_Function();
 
 	__enable_interrupt();
     while (1) {
