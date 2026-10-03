@@ -65,8 +65,15 @@ void OS_onStartup(void) {
 }
 
 void OS_onIdle(void) {
-    GPIOF_AHB->DATA_Bits[LED_RED] = LED_RED;
-    GPIOF_AHB->DATA_Bits[LED_RED] = 0U;
+		GPIOF_AHB->DATA_Bits[LED_RED] = LED_RED;
+		int volatile ii=0;
+		for (ii=0; ii<1000000; ++ii)
+		{
+		}
+		GPIOF_AHB->DATA_Bits[LED_RED] = 0;
+		for (ii=0; ii<1000000; ++ii)
+		{
+		}
     //__WFI(); /* stop the CPU and Wait for Interrupt */
 }
 

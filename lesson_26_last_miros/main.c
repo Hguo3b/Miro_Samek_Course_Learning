@@ -6,12 +6,10 @@ uint32_t stack_blinky1[40];
 OSThread blinky1;
 void main_blinky1() {
     while (1) {
-        uint32_t volatile i;
-        for (i = 1500U; i != 0U; --i) {
-            BSP_ledGreenOn();
-            BSP_ledGreenOff();
-        }
-        OS_delay(1U); /* block for 1 tick */
+				BSP_ledGreenOn();
+			  OS_delay(400U);
+				BSP_ledGreenOff();
+        OS_delay(5000U);
     }
 }
 
@@ -19,12 +17,10 @@ uint32_t stack_blinky2[40];
 OSThread blinky2;
 void main_blinky2() {
     while (1) {
-        uint32_t volatile i;
-        for (i = 3*1500U; i != 0U; --i) {
-            BSP_ledBlueOn();
-            BSP_ledBlueOff();
-        }
-        OS_delay(50U); /* block for 50 ticks */
+				BSP_ledBlueOn();
+			  OS_delay(400U);
+        BSP_ledBlueOff();
+        OS_delay(7000U);
     }
 }
 

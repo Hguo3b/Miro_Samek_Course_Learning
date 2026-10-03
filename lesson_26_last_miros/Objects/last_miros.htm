@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\last_miros.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\last_miros.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6240002: Last Updated: Sat Oct  3 16:05:11 2026
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6240002: Last Updated: Sat Oct  3 17:54:52 2026
 <BR><P>
 <H3>Maximum Stack Usage =         80 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1308,8 +1308,10 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[a0]"></a>OS_onIdle</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, bsp.o(.text.OS_onIdle))
-<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main_idleThread
+<P><STRONG><a name="[a0]"></a>OS_onIdle</STRONG> (Thumb, 94 bytes, Stack size 4 bytes, bsp.o(.text.OS_onIdle))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = OS_onIdle
+</UL>
+<BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main_idleThread
 </UL>
 
 <P><STRONG><a name="[94]"></a>OS_onStartup</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, bsp.o(.text.OS_onStartup))
@@ -1395,8 +1397,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[79]"></a>main_blinky1</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, main.o(.text.main_blinky1))
-<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = main_blinky1 &rArr; OS_delay &rArr; OS_sched &rArr; Q_onAssert
+<P><STRONG><a name="[79]"></a>main_blinky1</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, main.o(.text.main_blinky1))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = main_blinky1 &rArr; OS_delay &rArr; OS_sched &rArr; Q_onAssert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_delay
 <LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_ledGreenOff
@@ -1404,8 +1406,8 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(.text.main)
 </UL>
-<P><STRONG><a name="[7a]"></a>main_blinky2</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, main.o(.text.main_blinky2))
-<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = main_blinky2 &rArr; OS_delay &rArr; OS_sched &rArr; Q_onAssert
+<P><STRONG><a name="[7a]"></a>main_blinky2</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, main.o(.text.main_blinky2))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = main_blinky2 &rArr; OS_delay &rArr; OS_sched &rArr; Q_onAssert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_delay
 <LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_ledBlueOff
@@ -1414,7 +1416,7 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> main.o(.text.main)
 </UL>
 <P><STRONG><a name="[78]"></a>main_idleThread</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, miros.o(.text.main_idleThread))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = main_idleThread
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = main_idleThread &rArr; OS_onIdle
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_onIdle
 </UL>
