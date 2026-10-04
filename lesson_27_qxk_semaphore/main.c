@@ -9,12 +9,10 @@ uint32_t stack_blinky1[40];
 QXThread blinky1;
 void main_blinky1(QXThread * const me) {
     while (1) {
-        uint32_t volatile i;
-        for (i = 1500U; i != 0U; --i) {
-            BSP_ledGreenOn();
-            BSP_ledGreenOff();
-        }
-        QXThread_delay(1U); /* block for 1 tick */
+        BSP_ledGreenOn();
+		QXThread_delay(500U);
+        BSP_ledGreenOff();
+        QXThread_delay(500U); /* block for 1 tick */
     }
 }
 
@@ -27,10 +25,9 @@ void main_blinky2(QXThread * const me) {
         QXSemaphore_wait(&SW1_sema,  /* pointer to semaphore to wait on */
                          QXTHREAD_NO_TIMEOUT); /* timeout for waiting */
 
-        for (i = 3*1500U; i != 0U; --i) {
-            BSP_ledBlueOn();
-            BSP_ledBlueOff();
-        }
+        BSP_ledBlueOn();
+		QXThread_delay(300U);
+        BSP_ledBlueOff();
     }
 }
 
