@@ -75,6 +75,28 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "lesson_27_qxk_semaphore",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "lesson_27_qxk_semaphore",
+                "resourceId": "/lesson_27_qxk_semaphore"
+            },
+            "connections": [
+                {
+                    "name": "Stellaris In-Circuit Debug Interface",
+                    "cores": [
+                        {
+                            "name": "CORTEX_M4_0",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues>\n\n  <property id=\"FlashFiles\">\n    <curValue></curValue>\n  </property>\n\n</PropertyValues>\n"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
