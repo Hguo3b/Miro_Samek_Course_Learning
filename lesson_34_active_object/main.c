@@ -20,7 +20,9 @@ static void BlinkyButton_dispatch(BlinkyButton * const me, Event const * const e
             BSP_ledBlueOff();
             /* intentionally fall through...*/
         case TIMEOUT_SIG: {
-            if (!me->isLedOn) { /* LED not on */
+					  if (me->blink_time == 0U) { /* temporarily no blinking */
+						}							
+            else if (!me->isLedOn) { /* LED not on */
                 BSP_ledGreenOn();
                 me->isLedOn = true;
                 TimeEvent_arm(&me->te, me->blink_time, 0U);
@@ -33,14 +35,12 @@ static void BlinkyButton_dispatch(BlinkyButton * const me, Event const * const e
             break;
         }
         case BUTTON_PRESSED_SIG: {
-            INT8U err; /* uC/OS-II error status */
-
             BSP_ledBlueOn();
 
-            me->blink_time >>= 1; /* shorten the blink time by factor of 2 */
-            if (me->blink_time == 0U) {
+					  if (me->blink_time == 0U) {
                 me->blink_time = INITIAL_BLINK_TIME;
             }
+            me->blink_time >>= 1; /* shorten the blink time by factor of 2 */
             break;
         }
         case BUTTON_RELEASED_SIG: {
@@ -67,7 +67,6 @@ Active *AO_BlinkyButton = &blinkyButton.super;
 
 /* the main function =========================================================*/
 int main() {
-    INT8U err;
 
     BSP_init(); /* initialize the BSP */
     OSInit();   /* initialize uC/OS-II */
