@@ -13,6 +13,11 @@
 
 /* Buttons on the board */
 #define BTN_SW1      (1U << 4)
+#define BTN_SW2      (1U << 0)
+
+/* Test pins */
+#define PD0_PIN      (1U << 0)
+#define PD1_PIN      (1U << 1)
 
 /* Assertion handler  ======================================================*/
 Q_NORETURN Q_onAssert(char const * module, int_t id) {
