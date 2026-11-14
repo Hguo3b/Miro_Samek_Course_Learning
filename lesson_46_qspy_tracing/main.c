@@ -274,6 +274,8 @@ int main() {
 
     BSP_init(); /* initialize the BSP */
     QF_init();   /* initialize QP/C */
+	
+	  QS_OBJ_DICTIONARY(&(((TimeBomb *)AO_TimeBomb)->te));
 
     /* create AO and start it */
     TimeBomb_ctor(&timeBomb);

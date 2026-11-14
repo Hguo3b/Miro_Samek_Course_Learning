@@ -129,9 +129,11 @@ Section Cross References
     bsp.o(.ARM.exidx.text.QS_onCommand) refers to bsp.o(.text.QS_onCommand) for [Anonymous Symbol]
     main.o(.text.main) refers to bsp.o(.text.BSP_init) for BSP_init
     main.o(.text.main) refers to qv.o(.text.QF_init) for QF_init
+    main.o(.text.main) refers to main.o(.data.AO_TimeBomb) for AO_TimeBomb
+    main.o(.text.main) refers to main.o(.rodata.str1.1) for .L.str
+    main.o(.text.main) refers to qs.o(.text.QS_obj_dict_pre_) for QS_obj_dict_pre_
     main.o(.text.main) refers to main.o(.bss.timeBomb) for timeBomb
     main.o(.text.main) refers to main.o(.text.TimeBomb_ctor) for TimeBomb_ctor
-    main.o(.text.main) refers to main.o(.data.AO_TimeBomb) for AO_TimeBomb
     main.o(.text.main) refers to main.o(.bss.timeBomb_queue) for timeBomb_queue
     main.o(.text.main) refers to qv.o(.text.QActive_start_) for QActive_start_
     main.o(.text.main) refers to qv.o(.text.QF_run) for QF_run
@@ -141,7 +143,7 @@ Section Cross References
     main.o(.text.TimeBomb_ctor) refers to qf_time.o(.text.QTimeEvt_ctorX) for QTimeEvt_ctorX
     main.o(.ARM.exidx.text.TimeBomb_ctor) refers to main.o(.text.TimeBomb_ctor) for [Anonymous Symbol]
     main.o(.text.TimeBomb_initial) refers to main.o(.text.TimeBomb_defused) for TimeBomb_defused
-    main.o(.text.TimeBomb_initial) refers to main.o(.rodata.str1.1) for .L.str
+    main.o(.text.TimeBomb_initial) refers to main.o(.rodata.str1.1) for .L.str.1
     main.o(.text.TimeBomb_initial) refers to qs.o(.text.QS_fun_dict_pre_) for QS_fun_dict_pre_
     main.o(.text.TimeBomb_initial) refers to main.o(.text.TimeBomb_armed) for TimeBomb_armed
     main.o(.text.TimeBomb_initial) refers to main.o(.text.TimeBomb_wait4button) for TimeBomb_wait4button
@@ -184,7 +186,7 @@ Section Cross References
     main.o(.text.TimeBomb_boom) refers to qs.o(.text.QS_beginRec_) for QS_beginRec_
     main.o(.text.TimeBomb_boom) refers to bsp.o(.text.QS_onGetTime) for QS_onGetTime
     main.o(.text.TimeBomb_boom) refers to qs.o(.text.QS_u32_raw_) for QS_u32_raw_
-    main.o(.text.TimeBomb_boom) refers to main.o(.rodata.str1.1) for .L.str.6
+    main.o(.text.TimeBomb_boom) refers to main.o(.rodata.str1.1) for .L.str.7
     main.o(.text.TimeBomb_boom) refers to qs.o(.text.QS_str_fmt_) for QS_str_fmt_
     main.o(.text.TimeBomb_boom) refers to qs.o(.text.QS_endRec_) for QS_endRec_
     main.o(.text.TimeBomb_boom) refers to main.o(.text.TimeBomb_armed) for TimeBomb_armed
@@ -1660,66 +1662,67 @@ Image Symbol Table
     getOscClk                                0x000067a9   Thumb Code   360  system_tm4c123.o(.text.getOscClk)
     [Anonymous Symbol]                       0x000067a8   Section        0  system_tm4c123.o(.text.getOscClk)
     [Anonymous Symbol]                       0x00006910   Section        0  main.o(.text.main)
-    $v0                                      0x0000695c   Number         0  fpinit.o(x$fpl$fpinit)
-    x$fpl$fpinit                             0x0000695c   Section       26  fpinit.o(x$fpl$fpinit)
-    QActive_ctor.vtable                      0x00006978   Data          12  qf_qact.o(.rodata.QActive_ctor.vtable)
-    [Anonymous Symbol]                       0x00006978   Section        0  qf_qact.o(.rodata.QActive_ctor.vtable)
-    QHsm_ctor.vtable                         0x00006994   Data          12  qep_hsm.o(.rodata.QHsm_ctor.vtable)
-    [Anonymous Symbol]                       0x00006994   Section        0  qep_hsm.o(.rodata.QHsm_ctor.vtable)
-    Q_this_module_                           0x000069b5   Data           6  bsp.o(.rodata.Q_this_module_)
-    [Anonymous Symbol]                       0x000069b5   Section        0  bsp.o(.rodata.Q_this_module_)
-    Q_this_module_                           0x000069bb   Data           8  qep_hsm.o(.rodata.Q_this_module_)
-    [Anonymous Symbol]                       0x000069bb   Section        0  qep_hsm.o(.rodata.Q_this_module_)
-    Q_this_module_                           0x000069c3   Data           8  qf_actq.o(.rodata.Q_this_module_)
-    [Anonymous Symbol]                       0x000069c3   Section        0  qf_actq.o(.rodata.Q_this_module_)
-    Q_this_module_                           0x000069cb   Data           7  qf_dyn.o(.rodata.Q_this_module_)
-    [Anonymous Symbol]                       0x000069cb   Section        0  qf_dyn.o(.rodata.Q_this_module_)
-    Q_this_module_                           0x000069d2   Data           7  qf_mem.o(.rodata.Q_this_module_)
-    [Anonymous Symbol]                       0x000069d2   Section        0  qf_mem.o(.rodata.Q_this_module_)
-    Q_this_module_                           0x000069d9   Data           6  qf_ps.o(.rodata.Q_this_module_)
-    [Anonymous Symbol]                       0x000069d9   Section        0  qf_ps.o(.rodata.Q_this_module_)
-    Q_this_module_                           0x000069df   Data           8  qf_qact.o(.rodata.Q_this_module_)
-    [Anonymous Symbol]                       0x000069df   Section        0  qf_qact.o(.rodata.Q_this_module_)
-    Q_this_module_                           0x000069e7   Data           8  qf_time.o(.rodata.Q_this_module_)
-    [Anonymous Symbol]                       0x000069e7   Section        0  qf_time.o(.rodata.Q_this_module_)
-    Q_this_module_                           0x000069ef   Data           3  qv.o(.rodata.Q_this_module_)
-    [Anonymous Symbol]                       0x000069ef   Section        0  qv.o(.rodata.Q_this_module_)
-    Q_this_module_                           0x000069f2   Data           3  qs.o(.rodata.Q_this_module_)
-    [Anonymous Symbol]                       0x000069f2   Section        0  qs.o(.rodata.Q_this_module_)
-    Q_this_module_                           0x000069f5   Data           6  qs_rx.o(.rodata.Q_this_module_)
-    [Anonymous Symbol]                       0x000069f5   Section        0  qs_rx.o(.rodata.Q_this_module_)
-    SysTick_Handler.button2PressedEvt        0x000069fc   Data           4  bsp.o(.rodata.SysTick_Handler.button2PressedEvt)
-    [Anonymous Symbol]                       0x000069fc   Section        0  bsp.o(.rodata.SysTick_Handler.button2PressedEvt)
-    SysTick_Handler.button2ReleasedEvt       0x00006a00   Data           4  bsp.o(.rodata.SysTick_Handler.button2ReleasedEvt)
-    [Anonymous Symbol]                       0x00006a00   Section        0  bsp.o(.rodata.SysTick_Handler.button2ReleasedEvt)
-    SysTick_Handler.buttonPressedEvt         0x00006a04   Data           4  bsp.o(.rodata.SysTick_Handler.buttonPressedEvt)
-    [Anonymous Symbol]                       0x00006a04   Section        0  bsp.o(.rodata.SysTick_Handler.buttonPressedEvt)
-    SysTick_Handler.buttonReleasedEvt        0x00006a08   Data           4  bsp.o(.rodata.SysTick_Handler.buttonReleasedEvt)
-    [Anonymous Symbol]                       0x00006a08   Section        0  bsp.o(.rodata.SysTick_Handler.buttonReleasedEvt)
-    .L.str                                   0x00006a0c   Data           4  bsp.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x00006a0c   Section        0  bsp.o(.rodata.str1.1)
-    .L.str.1                                 0x00006a10   Data           4  bsp.o(.rodata.str1.1)
-    .L.str.6                                 0x00006a14   Data          21  bsp.o(.rodata.str1.1)
-    .L.str.4                                 0x00006a29   Data          20  bsp.o(.rodata.str1.1)
-    .L.str.5                                 0x00006a3d   Data          20  bsp.o(.rodata.str1.1)
-    .L.str.3                                 0x00006a51   Data          19  bsp.o(.rodata.str1.1)
-    .L.str.7                                 0x00006a64   Data          12  bsp.o(.rodata.str1.1)
-    .L.str.2                                 0x00006a70   Data          12  bsp.o(.rodata.str1.1)
-    .L.str.8                                 0x00006a7c   Data           4  bsp.o(.rodata.str1.1)
-    .L.str.9                                 0x00006a80   Data           5  bsp.o(.rodata.str1.1)
-    .L.str.10                                0x00006a85   Data           6  bsp.o(.rodata.str1.1)
-    .L.str.6                                 0x00006a8b   Data          12  main.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x00006a8b   Section        0  main.o(.rodata.str1.1)
-    .L.str.1                                 0x00006a97   Data          16  main.o(.rodata.str1.1)
-    .L.str                                   0x00006aa7   Data          18  main.o(.rodata.str1.1)
-    .L.str.4                                 0x00006ab9   Data          16  main.o(.rodata.str1.1)
-    .L.str.3                                 0x00006ac9   Data          16  main.o(.rodata.str1.1)
-    .L.str.5                                 0x00006ad9   Data          15  main.o(.rodata.str1.1)
-    .L.str.2                                 0x00006ae8   Data          22  main.o(.rodata.str1.1)
-    .L.str                                   0x00006afe   Data          10  qep_hsm.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x00006afe   Section        0  qep_hsm.o(.rodata.str1.1)
-    .L.str                                   0x00006b08   Data           6  qs_rx.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x00006b08   Section        0  qs_rx.o(.rodata.str1.1)
+    $v0                                      0x00006970   Number         0  fpinit.o(x$fpl$fpinit)
+    x$fpl$fpinit                             0x00006970   Section       26  fpinit.o(x$fpl$fpinit)
+    QActive_ctor.vtable                      0x0000698c   Data          12  qf_qact.o(.rodata.QActive_ctor.vtable)
+    [Anonymous Symbol]                       0x0000698c   Section        0  qf_qact.o(.rodata.QActive_ctor.vtable)
+    QHsm_ctor.vtable                         0x000069a8   Data          12  qep_hsm.o(.rodata.QHsm_ctor.vtable)
+    [Anonymous Symbol]                       0x000069a8   Section        0  qep_hsm.o(.rodata.QHsm_ctor.vtable)
+    Q_this_module_                           0x000069c9   Data           6  bsp.o(.rodata.Q_this_module_)
+    [Anonymous Symbol]                       0x000069c9   Section        0  bsp.o(.rodata.Q_this_module_)
+    Q_this_module_                           0x000069cf   Data           8  qep_hsm.o(.rodata.Q_this_module_)
+    [Anonymous Symbol]                       0x000069cf   Section        0  qep_hsm.o(.rodata.Q_this_module_)
+    Q_this_module_                           0x000069d7   Data           8  qf_actq.o(.rodata.Q_this_module_)
+    [Anonymous Symbol]                       0x000069d7   Section        0  qf_actq.o(.rodata.Q_this_module_)
+    Q_this_module_                           0x000069df   Data           7  qf_dyn.o(.rodata.Q_this_module_)
+    [Anonymous Symbol]                       0x000069df   Section        0  qf_dyn.o(.rodata.Q_this_module_)
+    Q_this_module_                           0x000069e6   Data           7  qf_mem.o(.rodata.Q_this_module_)
+    [Anonymous Symbol]                       0x000069e6   Section        0  qf_mem.o(.rodata.Q_this_module_)
+    Q_this_module_                           0x000069ed   Data           6  qf_ps.o(.rodata.Q_this_module_)
+    [Anonymous Symbol]                       0x000069ed   Section        0  qf_ps.o(.rodata.Q_this_module_)
+    Q_this_module_                           0x000069f3   Data           8  qf_qact.o(.rodata.Q_this_module_)
+    [Anonymous Symbol]                       0x000069f3   Section        0  qf_qact.o(.rodata.Q_this_module_)
+    Q_this_module_                           0x000069fb   Data           8  qf_time.o(.rodata.Q_this_module_)
+    [Anonymous Symbol]                       0x000069fb   Section        0  qf_time.o(.rodata.Q_this_module_)
+    Q_this_module_                           0x00006a03   Data           3  qv.o(.rodata.Q_this_module_)
+    [Anonymous Symbol]                       0x00006a03   Section        0  qv.o(.rodata.Q_this_module_)
+    Q_this_module_                           0x00006a06   Data           3  qs.o(.rodata.Q_this_module_)
+    [Anonymous Symbol]                       0x00006a06   Section        0  qs.o(.rodata.Q_this_module_)
+    Q_this_module_                           0x00006a09   Data           6  qs_rx.o(.rodata.Q_this_module_)
+    [Anonymous Symbol]                       0x00006a09   Section        0  qs_rx.o(.rodata.Q_this_module_)
+    SysTick_Handler.button2PressedEvt        0x00006a10   Data           4  bsp.o(.rodata.SysTick_Handler.button2PressedEvt)
+    [Anonymous Symbol]                       0x00006a10   Section        0  bsp.o(.rodata.SysTick_Handler.button2PressedEvt)
+    SysTick_Handler.button2ReleasedEvt       0x00006a14   Data           4  bsp.o(.rodata.SysTick_Handler.button2ReleasedEvt)
+    [Anonymous Symbol]                       0x00006a14   Section        0  bsp.o(.rodata.SysTick_Handler.button2ReleasedEvt)
+    SysTick_Handler.buttonPressedEvt         0x00006a18   Data           4  bsp.o(.rodata.SysTick_Handler.buttonPressedEvt)
+    [Anonymous Symbol]                       0x00006a18   Section        0  bsp.o(.rodata.SysTick_Handler.buttonPressedEvt)
+    SysTick_Handler.buttonReleasedEvt        0x00006a1c   Data           4  bsp.o(.rodata.SysTick_Handler.buttonReleasedEvt)
+    [Anonymous Symbol]                       0x00006a1c   Section        0  bsp.o(.rodata.SysTick_Handler.buttonReleasedEvt)
+    .L.str                                   0x00006a20   Data           4  bsp.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x00006a20   Section        0  bsp.o(.rodata.str1.1)
+    .L.str.1                                 0x00006a24   Data           4  bsp.o(.rodata.str1.1)
+    .L.str.6                                 0x00006a28   Data          21  bsp.o(.rodata.str1.1)
+    .L.str.4                                 0x00006a3d   Data          20  bsp.o(.rodata.str1.1)
+    .L.str.5                                 0x00006a51   Data          20  bsp.o(.rodata.str1.1)
+    .L.str.3                                 0x00006a65   Data          19  bsp.o(.rodata.str1.1)
+    .L.str.7                                 0x00006a78   Data          12  bsp.o(.rodata.str1.1)
+    .L.str.2                                 0x00006a84   Data          12  bsp.o(.rodata.str1.1)
+    .L.str.8                                 0x00006a90   Data           4  bsp.o(.rodata.str1.1)
+    .L.str.9                                 0x00006a94   Data           5  bsp.o(.rodata.str1.1)
+    .L.str.10                                0x00006a99   Data           6  bsp.o(.rodata.str1.1)
+    .L.str.7                                 0x00006a9f   Data          12  main.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x00006a9f   Section        0  main.o(.rodata.str1.1)
+    .L.str                                   0x00006aab   Data          33  main.o(.rodata.str1.1)
+    .L.str.2                                 0x00006acc   Data          16  main.o(.rodata.str1.1)
+    .L.str.1                                 0x00006adc   Data          18  main.o(.rodata.str1.1)
+    .L.str.5                                 0x00006aee   Data          16  main.o(.rodata.str1.1)
+    .L.str.4                                 0x00006afe   Data          16  main.o(.rodata.str1.1)
+    .L.str.6                                 0x00006b0e   Data          15  main.o(.rodata.str1.1)
+    .L.str.3                                 0x00006b1d   Data          22  main.o(.rodata.str1.1)
+    .L.str                                   0x00006b33   Data          10  qep_hsm.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x00006b33   Section        0  qep_hsm.o(.rodata.str1.1)
+    .L.str                                   0x00006b3d   Data           6  qs_rx.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x00006b3d   Section        0  qs_rx.o(.rodata.str1.1)
     .bss                                     0x20000008   Section       96  libspace.o(.bss)
     QS_onStartup.qsRxBuf                     0x20000154   Data         100  bsp.o(.bss.QS_onStartup.qsRxBuf)
     [Anonymous Symbol]                       0x20000154   Section        0  bsp.o(.bss.QS_onStartup.qsRxBuf)
@@ -2023,15 +2026,15 @@ Image Symbol Table
     SystemCoreClockUpdate                    0x000060a9   Thumb Code   326  system_tm4c123.o(.text.SystemCoreClockUpdate)
     SystemInit                               0x000061f1   Thumb Code   268  system_tm4c123.o(.text.SystemInit)
     UART0_Handler                            0x000066bd   Thumb Code    78  bsp.o(.text.UART0_Handler)
-    main                                     0x00006911   Thumb Code    76  main.o(.text.main)
-    _fp_init                                 0x0000695d   Thumb Code    26  fpinit.o(x$fpl$fpinit)
-    __fplib_config_fpu_vfp                   0x00006975   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    __fplib_config_pureend_doubles           0x00006975   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    QEvt_reserved_                           0x00006984   Data          16  qep_hsm.o(.rodata.QEvt_reserved_)
-    Q_BUILD_DATE                             0x000069a0   Data          12  qstamp.o(.rodata.Q_BUILD_DATE)
-    Q_BUILD_TIME                             0x000069ac   Data           9  qstamp.o(.rodata.Q_BUILD_TIME)
-    Region$$Table$$Base                      0x00006b10   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x00006b30   Number         0  anon$$obj.o(Region$$Table)
+    main                                     0x00006911   Thumb Code    96  main.o(.text.main)
+    _fp_init                                 0x00006971   Thumb Code    26  fpinit.o(x$fpl$fpinit)
+    __fplib_config_fpu_vfp                   0x00006989   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    __fplib_config_pureend_doubles           0x00006989   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    QEvt_reserved_                           0x00006998   Data          16  qep_hsm.o(.rodata.QEvt_reserved_)
+    Q_BUILD_DATE                             0x000069b4   Data          12  qstamp.o(.rodata.Q_BUILD_DATE)
+    Q_BUILD_TIME                             0x000069c0   Data           9  qstamp.o(.rodata.Q_BUILD_TIME)
+    Region$$Table$$Base                      0x00006b44   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00006b64   Number         0  anon$$obj.o(Region$$Table)
     AO_TimeBomb                              0x20000000   Data           4  main.o(.data.AO_TimeBomb)
     SystemCoreClock                          0x20000004   Data           4  system_tm4c123.o(.data.SystemCoreClock)
     __libspace_start                         0x20000008   Data          96  libspace.o(.bss)
@@ -2054,9 +2057,9 @@ Memory Map of the image
 
   Image Entry point : 0x00000339
 
-  Load Region LR_1 (Base: 0x00000000, Size: 0x00006b38, Max: 0xffffffff, ABSOLUTE)
+  Load Region LR_1 (Base: 0x00000000, Size: 0x00006b6c, Max: 0xffffffff, ABSOLUTE)
 
-    Execution Region ER_RO (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00006b30, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RO (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00006b64, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -2279,47 +2282,47 @@ Memory Map of the image
     0x00006780   0x00006780   0x00000026   Code   RO           48    .text.__NVIC_SystemReset  bsp.o
     0x000067a6   0x000067a6   0x00000002   PAD
     0x000067a8   0x000067a8   0x00000168   Code   RO          559    .text.getOscClk     system_tm4c123.o
-    0x00006910   0x00006910   0x0000004c   Code   RO           68    .text.main          main.o
-    0x0000695c   0x0000695c   0x0000001a   Code   RO          663    x$fpl$fpinit        fz_wm.l(fpinit.o)
-    0x00006976   0x00006976   0x00000002   PAD
-    0x00006978   0x00006978   0x0000000c   Data   RO          313    .rodata.QActive_ctor.vtable  qf_qact.o
-    0x00006984   0x00006984   0x00000010   Data   RO          117    .rodata.QEvt_reserved_  qep_hsm.o
-    0x00006994   0x00006994   0x0000000c   Data   RO          118    .rodata.QHsm_ctor.vtable  qep_hsm.o
-    0x000069a0   0x000069a0   0x0000000c   Data   RO          540    .rodata.Q_BUILD_DATE  qstamp.o
-    0x000069ac   0x000069ac   0x00000009   Data   RO          541    .rodata.Q_BUILD_TIME  qstamp.o
-    0x000069b5   0x000069b5   0x00000006   Data   RO           58    .rodata.Q_this_module_  bsp.o
-    0x000069bb   0x000069bb   0x00000008   Data   RO          120    .rodata.Q_this_module_  qep_hsm.o
-    0x000069c3   0x000069c3   0x00000008   Data   RO          194    .rodata.Q_this_module_  qf_actq.o
-    0x000069cb   0x000069cb   0x00000007   Data   RO          244    .rodata.Q_this_module_  qf_dyn.o
-    0x000069d2   0x000069d2   0x00000007   Data   RO          259    .rodata.Q_this_module_  qf_mem.o
-    0x000069d9   0x000069d9   0x00000006   Data   RO          299    .rodata.Q_this_module_  qf_ps.o
-    0x000069df   0x000069df   0x00000008   Data   RO          314    .rodata.Q_this_module_  qf_qact.o
-    0x000069e7   0x000069e7   0x00000008   Data   RO          373    .rodata.Q_this_module_  qf_time.o
-    0x000069ef   0x000069ef   0x00000003   Data   RO          401    .rodata.Q_this_module_  qv.o
-    0x000069f2   0x000069f2   0x00000003   Data   RO          471    .rodata.Q_this_module_  qs.o
-    0x000069f5   0x000069f5   0x00000006   Data   RO          532    .rodata.Q_this_module_  qs_rx.o
-    0x000069fb   0x000069fb   0x00000001   PAD
-    0x000069fc   0x000069fc   0x00000004   Data   RO           56    .rodata.SysTick_Handler.button2PressedEvt  bsp.o
-    0x00006a00   0x00006a00   0x00000004   Data   RO           57    .rodata.SysTick_Handler.button2ReleasedEvt  bsp.o
-    0x00006a04   0x00006a04   0x00000004   Data   RO           53    .rodata.SysTick_Handler.buttonPressedEvt  bsp.o
-    0x00006a08   0x00006a08   0x00000004   Data   RO           55    .rodata.SysTick_Handler.buttonReleasedEvt  bsp.o
-    0x00006a0c   0x00006a0c   0x0000007f   Data   RO           54    .rodata.str1.1      bsp.o
-    0x00006a8b   0x00006a8b   0x00000073   Data   RO           89    .rodata.str1.1      main.o
-    0x00006afe   0x00006afe   0x0000000a   Data   RO          119    .rodata.str1.1      qep_hsm.o
-    0x00006b08   0x00006b08   0x00000006   Data   RO          531    .rodata.str1.1      qs_rx.o
-    0x00006b0e   0x00006b0e   0x00000002   PAD
-    0x00006b10   0x00006b10   0x00000020   Data   RO          738    Region$$Table       anon$$obj.o
+    0x00006910   0x00006910   0x00000060   Code   RO           68    .text.main          main.o
+    0x00006970   0x00006970   0x0000001a   Code   RO          663    x$fpl$fpinit        fz_wm.l(fpinit.o)
+    0x0000698a   0x0000698a   0x00000002   PAD
+    0x0000698c   0x0000698c   0x0000000c   Data   RO          313    .rodata.QActive_ctor.vtable  qf_qact.o
+    0x00006998   0x00006998   0x00000010   Data   RO          117    .rodata.QEvt_reserved_  qep_hsm.o
+    0x000069a8   0x000069a8   0x0000000c   Data   RO          118    .rodata.QHsm_ctor.vtable  qep_hsm.o
+    0x000069b4   0x000069b4   0x0000000c   Data   RO          540    .rodata.Q_BUILD_DATE  qstamp.o
+    0x000069c0   0x000069c0   0x00000009   Data   RO          541    .rodata.Q_BUILD_TIME  qstamp.o
+    0x000069c9   0x000069c9   0x00000006   Data   RO           58    .rodata.Q_this_module_  bsp.o
+    0x000069cf   0x000069cf   0x00000008   Data   RO          120    .rodata.Q_this_module_  qep_hsm.o
+    0x000069d7   0x000069d7   0x00000008   Data   RO          194    .rodata.Q_this_module_  qf_actq.o
+    0x000069df   0x000069df   0x00000007   Data   RO          244    .rodata.Q_this_module_  qf_dyn.o
+    0x000069e6   0x000069e6   0x00000007   Data   RO          259    .rodata.Q_this_module_  qf_mem.o
+    0x000069ed   0x000069ed   0x00000006   Data   RO          299    .rodata.Q_this_module_  qf_ps.o
+    0x000069f3   0x000069f3   0x00000008   Data   RO          314    .rodata.Q_this_module_  qf_qact.o
+    0x000069fb   0x000069fb   0x00000008   Data   RO          373    .rodata.Q_this_module_  qf_time.o
+    0x00006a03   0x00006a03   0x00000003   Data   RO          401    .rodata.Q_this_module_  qv.o
+    0x00006a06   0x00006a06   0x00000003   Data   RO          471    .rodata.Q_this_module_  qs.o
+    0x00006a09   0x00006a09   0x00000006   Data   RO          532    .rodata.Q_this_module_  qs_rx.o
+    0x00006a0f   0x00006a0f   0x00000001   PAD
+    0x00006a10   0x00006a10   0x00000004   Data   RO           56    .rodata.SysTick_Handler.button2PressedEvt  bsp.o
+    0x00006a14   0x00006a14   0x00000004   Data   RO           57    .rodata.SysTick_Handler.button2ReleasedEvt  bsp.o
+    0x00006a18   0x00006a18   0x00000004   Data   RO           53    .rodata.SysTick_Handler.buttonPressedEvt  bsp.o
+    0x00006a1c   0x00006a1c   0x00000004   Data   RO           55    .rodata.SysTick_Handler.buttonReleasedEvt  bsp.o
+    0x00006a20   0x00006a20   0x0000007f   Data   RO           54    .rodata.str1.1      bsp.o
+    0x00006a9f   0x00006a9f   0x00000094   Data   RO           88    .rodata.str1.1      main.o
+    0x00006b33   0x00006b33   0x0000000a   Data   RO          119    .rodata.str1.1      qep_hsm.o
+    0x00006b3d   0x00006b3d   0x00000006   Data   RO          531    .rodata.str1.1      qs_rx.o
+    0x00006b43   0x00006b43   0x00000001   PAD
+    0x00006b44   0x00006b44   0x00000020   Data   RO          738    Region$$Table       anon$$obj.o
 
 
-    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x00006b30, Size: 0x00000008, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x00006b64, Size: 0x00000008, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x00006b30   0x00000004   Data   RW           87    .data.AO_TimeBomb   main.o
-    0x20000004   0x00006b34   0x00000004   Data   RW          563    .data.SystemCoreClock  system_tm4c123.o
+    0x20000000   0x00006b64   0x00000004   Data   RW           87    .data.AO_TimeBomb   main.o
+    0x20000004   0x00006b68   0x00000004   Data   RW          563    .data.SystemCoreClock  system_tm4c123.o
 
 
-    Execution Region ER_ZI (Exec base: 0x20000008, Load base: 0x00006b38, Size: 0x00000880, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_ZI (Exec base: 0x20000008, Load base: 0x00006b6c, Size: 0x00000880, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -2334,14 +2337,14 @@ Memory Map of the image
     0x200005a0        -       0x00000014   Zero   RW          469    .bss.QS_priv_       qs.o
     0x200005b4        -       0x0000002c   Zero   RW          529    .bss.QS_rxPriv_     qs_rx.o
     0x200005e0        -       0x00000002   Zero   RW          476    .bss.QS_target_info_pre_.endian_test  qs.o
-    0x200005e2   0x00006b38   0x00000002   PAD
+    0x200005e2   0x00006b6c   0x00000002   PAD
     0x200005e4        -       0x00000014   Zero   RW          374    .bss.QTimeEvt_timeEvtHead_  qf_time.o
     0x200005f8        -       0x00000008   Zero   RW          400    .bss.QV_priv_       qv.o
     0x20000600        -       0x00000008   Zero   RW           52    .bss.SysTick_Handler.buttons  bsp.o
     0x20000608        -       0x00000018   Zero   RW          530    .bss.l_rx           qs_rx.o
     0x20000620        -       0x0000003c   Zero   RW           86    .bss.timeBomb       main.o
-    0x2000065c        -       0x00000028   Zero   RW           88    .bss.timeBomb_queue  main.o
-    0x20000684   0x00006b38   0x00000004   PAD
+    0x2000065c        -       0x00000028   Zero   RW           89    .bss.timeBomb_queue  main.o
+    0x20000684   0x00006b6c   0x00000004   PAD
     0x20000688        -       0x00000000   Zero   RW          548    HEAP                startup_tm4c123.o
     0x20000688        -       0x00000200   Zero   RW          547    STACK               startup_tm4c123.o
 
@@ -2354,7 +2357,7 @@ Image component sizes
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
       3120          0        149          0       1108      17412   bsp.o
-      1024          0        115          4        100       5098   main.o
+      1044          0        148          4        100       5142   main.o
       3778          0         46          0          0       8091   qep_hsm.o
         48          0          0          0        196       3117   qf_act.o
       1094          0          8          0          0       7698   qf_actq.o
@@ -2373,9 +2376,9 @@ Image component sizes
        954         28          0          4          0       6834   system_tm4c123.o
 
     ----------------------------------------------------------------------
-     26024        292       1060          8       2080     118966   Object Totals
+     26044        292       1092          8       2080     119010   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-        98          0          3          0          6          0   (incl. Padding)
+        98          0          2          0          6          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -2424,15 +2427,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     26380        308       1060          8       2176     119278   Grand Totals
-     26380        308       1060          8       2176     119278   ELF Image Totals
-     26380        308       1060          8          0          0   ROM Totals
+     26400        308       1092          8       2176     119322   Grand Totals
+     26400        308       1092          8       2176     119322   ELF Image Totals
+     26400        308       1092          8          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                27440 (  26.80kB)
+    Total RO  Size (Code + RO Data)                27492 (  26.85kB)
     Total RW  Size (RW Data + ZI Data)              2184 (   2.13kB)
-    Total ROM Size (Code + RO Data + RW Data)      27448 (  26.80kB)
+    Total ROM Size (Code + RO Data + RW Data)      27500 (  26.86kB)
 
 ==============================================================================
 
